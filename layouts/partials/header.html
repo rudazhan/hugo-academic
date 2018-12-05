@@ -33,8 +33,8 @@
   {{ partial "css/parse_theme.css" . }}
   {{ $css := .Site.Data.assets.css }}
   {{ $js := .Site.Data.assets.js }}
-  {{ if ne ($scr.Get "primary") "#fff" }}
-  <meta name="theme-color" content="{{ $scr.Get "primary" }}">
+  {{ if ne ($scr.Get "menu_primary") "#fff" }}
+  <meta name="theme-color" content="{{ $scr.Get "menu_primary" }}">
   {{ end }}
 
   {{/* Attempt to load local vendor CSS, otherwise load from CDN. */}}
